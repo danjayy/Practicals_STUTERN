@@ -1,0 +1,45 @@
+body{
+    font-family: Cursive;
+    background-color: lightseagreen;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+div {
+    margin-left:20%;
+}
+
+.list {
+    border: 1px solid burlywood;
+    border-radius: 10px;
+    width: 32%;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: grey;
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-self: auto;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+#dislikes {
+    list-style-type: square;
+    outline: 3px solid red;
+    width: 30%;
+}
+
+#likes {
+    outline: 3px solid lightgreen;
+}
+
+#_like {
+    color: aliceblue;
+}
