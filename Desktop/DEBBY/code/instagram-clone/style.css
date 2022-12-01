@@ -1,0 +1,436 @@
+body {
+    background-color: #FAF9F6;
+    box-sizing: border-box;
+}
+
+#IG-page {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5%; 
+    position: relative;
+}
+
+.section-1 {
+    background-color: white;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    margin: 0;
+    padding-left: 3%;
+    border-right: 1px #afa9a9 solid;
+    /* flex-grow: 1; */
+}
+
+.section-1 > p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding-top: 10%;
+}
+
+.section-1 > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-1 > img {
+    /* font-family: ; */
+    /* font-size: 2rem; */
+    padding-top: 3%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-bottom: 5%;
+    width: 150px;
+    height: 70px;
+}
+
+.section-2 {
+    margin-left: 25%;
+    height: 100vh;
+    width: 40%;
+    /* background-color: aqua; */
+    justify-self: center;
+}
+
+.section-2 > .stories {
+    margin-top: 5%;
+    height: 18%;
+    border-radius: 10px;
+    border: 1px solid #afa9a9;
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.section-2 > .stories > .story > .wrapper > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.section-2 > .stories > .story > .wrapper {
+    padding: 5px;
+    border-radius: 50%;
+    background-image: url(instbg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10%;
+}
+
+.section-2 > .stories > .story > p {
+    opacity: 0.8;
+    font-family: sans-serif;
+    padding-top: 5%;
+    margin-top: 0;
+    padding-left: 2%;
+    font-size: small;
+}
+
+.section-2 > .post {
+    margin-top: 3%;
+    background-color: white;
+    border: 1px solid #afa9a9;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.section-2 > .post > .part-1 {
+    height: 2.5rem;
+    display: flex;
+    justify-items: space-between;
+}
+
+.section-2 > .post > .part-1 > img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.section-2 > .post > .part-1 > div > p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.section-2 > .post > .part-1 > div > .user-name {
+    font-weight: bold;
+    padding-bottom: 2%;
+    padding-top: 12%;
+}
+
+.section-2 > .post > .part-1 > div > #location {
+    font-size: small;
+    opacity: 0.6;
+}
+
+.section-2 > .post > .part-1 > i {
+    padding-left: 59%;
+    padding-top: 5%;
+}
+
+.section-2 > .post > .reaction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 > .post > .reaction > .left-icon {
+    display: flex;
+    justify-items: space-between;
+    gap: 20%;
+    font-size: large;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.section-2 > .post > .reaction > .right-icon {
+    padding-top: 4%;
+    padding-right: 3%;
+}
+
+.section-2 > .post > .user-name {
+    font-weight: bold;
+    padding-left: 3%;
+}
+
+.section-2 > .post > .user-name > span {
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.section-2 > .post > .user-name > span > span {
+    opacity: 0.5;
+}
+
+.section-2 > .post > #time {
+    text-transform: uppercase;
+    padding-left: 3%;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.section-2 > .post > .footing {
+    border-top: 1px solid #d6d2d2;
+    height: 3rem;
+    display: grid;
+    justify-items: space-between;
+}
+
+.section-2 > .post > .footing > p {
+    padding-left: 3%;
+}
+
+.section-2 > .post > .footing > p > span {
+    opacity: 0.5;
+    padding-left: 3.2%;
+}
+
+.section-2 > .post > .footing > p > span:nth-of-type(2) {
+    opacity: 0.5;
+    padding-left: 20rem;
+    color: #3b6ebf;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #79787a;
+}
+
+.section-2 > .post > .pictures > img{
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+
+
+
+.section-3 {
+    margin-top: 6%;
+    font-weight: bold;
+    width: 30%;
+    /* height: 50%; */
+    position: fixed;
+    right: 0;
+    /* flex-grow: 2; */
+}
+
+.section-3 > .heading {
+    display: flex;
+    justify-items: space-between;
+}
+
+.section-3 > .heading > .info {
+    padding-left: 3%;
+}
+
+.section-3 > .heading > .info > #username {
+    font-family: sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-3 > .heading > .info > #name {
+    opacity: 0.5;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding-top: 1%;
+    margin-top: 0;
+}
+
+.section-3 > .heading > .profile-pic > img {
+    border-radius: 50%;
+    width: 75px;
+    height: 70px;
+}
+
+.section-3 > .heading > .switch {
+    color: #3b6ebf;
+    padding-left: 20%;
+    padding-top: 1.5%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.section-3 > .suggestions {
+    font-family: sans-serif;
+    display: flex;
+    justify-items: space-between;
+    gap: 40%;
+}
+
+.section-3 > .suggestions > .left-side {
+    /* display: flex; */
+    align-items: space-between;
+    column-gap: 10%;
+}
+
+.section-3 > .suggestions > .left-side > #headd {
+    font-weight: bold;
+    opacity: 0.55;
+}
+
+.section-3 > .suggestions > .left-side > .grouped-left > div > .descript {
+    opacity: 0.4;
+    padding-bottom: 15%;
+}
+
+.section-3 > .suggestions > .left-side > .grouped-left > div > li {
+    list-style-type: none;
+}
+
+.section-3 > .suggestions > .left-side > .grouped-left > img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.section-3 > .suggestions > .left-side > .grouped-left {
+    display: flex;
+    justify-items: space-between;
+    gap: 3%;
+}
+
+.section-3 > .suggestions > .right-side > .grouped-right {
+    color: #3b6ebf;
+}
+
+.section-3 > .suggestions > .right-side > #see-all {
+    color: initial;
+}
+
+.right-side > .grouped-right:nth-of-type(2) {
+    padding-top: 25%;
+}
+
+.right-side > .grouped-right:nth-of-type(3) {
+    padding-top: 30%;
+}
+
+.right-side > .grouped-right:nth-of-type(4) {
+    padding-top: 40%;
+}
+
+.right-side > .grouped-right:nth-of-type(5) {
+    padding-top: 35%;
+}
+
+.foot {
+    padding-top: 5%;
+    font-size: small;
+    font-family: sans-serif;
+    opacity: 0.3;
+    font-weight: 500;
+}
+
+.foot > p:nth-of-type(1) {
+    font-size: small;
+    padding-bottom: 3%;
+}
